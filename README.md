@@ -1,6 +1,6 @@
 # SRNTV Launcher
 
-![SRNTV Launcher running on Android TV](docs/images/srntv-launcher-home.png)
+![SRNTV Launcher home screen](docs/images/srntv-home-01.png)
 
 A premium, AMOLED-focused, liquid-glass Android TV launcher.
 
@@ -9,6 +9,14 @@ SRNTV Launcher is a minimalist Android TV home screen built around a pure black 
 
 ## Design Philosophy
 SRNTV Launcher is built for those who prefer minimalism and high-end aesthetics. It rejects cluttered app grids, ads, and recommendations in favor of a clean, cinematic, "Black & Red" identity that feels modern and unobtrusive on a large TV screen.
+
+## Screenshots
+
+| Home screen — first selection | Home screen — next app |
+| :---: | :---: |
+| ![Home screen — first selection](docs/images/srntv-home-01.png) | ![Home screen — next app](docs/images/srntv-home-02.png) |
+| **Home screen — another app** | **Launcher additional view** |
+| ![Home screen — another app](docs/images/srntv-home-03.png) | ![Launcher additional view](docs/images/srntv-home-04.png) |
 
 ## Features
 - **Cinematic AMOLED Interface**: Pure black background (`#000000`) for true contrast on OLED/high-end TV panels.
