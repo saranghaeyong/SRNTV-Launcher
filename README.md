@@ -6,8 +6,13 @@ A premium, AMOLED-focused, liquid-glass Android TV launcher.
 
 ## Live TV Test
 
-Watch a demonstration of SRNTV Launcher running on a live TV setup:
-- [Live TV Test Video](docs/videos/livetest.mp4)
+<p align="center">
+  <img src="docs/videos/livetest.gif" alt="SRNTV Launcher running on a real Android TV" width="800">
+</p>
+
+<p align="center">
+  <a href="docs/videos/livetest.mp4">▶ Watch or download the full-quality TV test video (MP4)</a>
+</p>
 
 ## About SRNTV Launcher
 SRNTV Launcher is a minimalist Android TV home screen built around a pure black interface, elegant red accents, Liquid Glass-inspired controls, dynamic wallpapers, and custom typography. Designed for a clean, distraction-free TV experience with fast D-pad navigation and direct app launching.
