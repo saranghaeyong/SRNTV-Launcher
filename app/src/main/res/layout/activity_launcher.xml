@@ -52,7 +52,7 @@
                 android:letterSpacing="0.1"
                 android:text="Good Afternoon"
                 android:textAllCaps="true"
-                android:textColor="#E50914"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp" />
 
             <TextView
