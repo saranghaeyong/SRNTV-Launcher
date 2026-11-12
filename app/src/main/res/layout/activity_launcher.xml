@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:fitsSystemWindows="false"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!-- Wallpaper Background Layer - Absolute Edge-to-Edge -->
+    <ImageView
+        android:id="@+id/iv_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <!-- Dark Overlay for Readability - Absolute Edge-to-Edge -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <!-- UI Layer with Overscan-Safe Padding -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="64dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <!-- Ambient Glow - Behind UI controls but within UI stack -->
+        <View
+            android:layout_width="800dp"
+            android:layout_height="600dp"
+            android:layout_gravity="center"
+            android:alpha="0.6"
+            android:background="@drawable/ambient_red_glow" />
+
+        <!-- Top Left: Elegant Clock & Greeting -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:letterSpacing="0.1"
+                android:text="Good Afternoon"
+                android:textAllCaps="true"
+                android:textColor="#E50914"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                android:fontFamily="sans-serif-medium"
+                android:includeFontPadding="false"
+                android:text="12:28 PM"
+                android:textColor="#FFFFFF"
+                android:textSize="48sp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Thursday, November 12, 2026"
+                android:textColor="#888888"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Top Right: Liquid Glass Settings Pill -->
+        <LinearLayout
+            android:id="@+id/quick_settings_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:background="@drawable/glass_pill_bg"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/btn_inputs"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:background="@drawable/quick_setting_btn_normal"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="INPUTS"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="#20FFFFFF" />
+
+            <TextView
+                android:id="@+id/btn_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:background="@drawable/quick_setting_btn_normal"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="WI-FI"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="#20FFFFFF" />
+
+            <TextView
+                android:id="@+id/btn_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:background="@drawable/quick_setting_btn_normal"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:letterSpacing="0.05"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="SETTINGS"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Center: Liquid Glass App Selector -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/glass_pill_main"
+                android:elevation="16dp"
+                android:paddingStart="64dp"
+                android:paddingTop="32dp"
+                android:paddingEnd="64dp"
+                android:paddingBottom="32dp">
+
+                <TextView
+                    android:id="@+id/tv_app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="@font/pricedow"
+                    android:gravity="center"
+                    android:letterSpacing="0.05"
+                    android:maxWidth="800dp"
+                    android:text="SRNTV"
+                    android:textColor="#FFFFFF"
+                    android:textSize="80sp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.2"
+                android:text="PRESS OK TO OPEN"
+                android:textColor="#40FFFFFF"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>
